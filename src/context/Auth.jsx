@@ -14,5 +14,5 @@ export function AuthProvider({ children }) {
 export function Privada({ children }) {
   const { usuario, cargando } = useAuth();
   if (cargando) return <p role="status">Verificando sesión…</p>;
-  return usuario ? children : <Navigate replace to="/ingresar" />;
+  return usuario ? children : <Navigate replace to="/ingreso" />;
 }
